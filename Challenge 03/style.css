@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --clr-green-500: hsl(75, 94%, 57%);
+    --clr-white-100: hsl(0, 0%, 100%);
+
+    --clr-grey-700: hsl(0, 0%, 20%);
+    --clr-grey-800: hsl(0, 0%, 12%);
+    --clr-grey-900: hsl(0, 0%, 8%);
+
+    --font-weight-400: 400;
+    --font-weight-600: 600;
+    --font-weight-700: 700;
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    font-family: 'Inter';
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-inline-size: 100%;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    inline-size: 100%;
+    block-size: 100vh;
+    background-color: var(--clr-grey-900);
+}
+
+.card {
+    text-align: center;
+    inline-size: 80%;
+    max-inline-size: 29em;
+    background-color: var(--clr-grey-800);
+    border-radius: 1em;
+    margin: 0 auto;
+    padding: 1em 3em;
+}
+
+.avatar {
+    border-radius: 50%;
+    inline-size: 8em;
+    padding-block-start: 2rem;
+}
+
+.person-details {
+    margin-block: 2rem;
+}
+
+.person-details h1 {
+    color: var(--clr-white-100);
+    font-weight: var(--font-weight-600);
+    padding-block: 0.35em;
+}
+
+.person-details h2 {
+    font-size: 1.15em;
+    font-weight: var(--font-weight-600);
+    color: var(--clr-green-500);
+}
+
+.position {
+    font-size: 1rem;
+    font-weight: var(--font-weight-600);
+    color: var(--clr-white-100);
+    padding-top: 0.5rem;
+}
+
+.social-links-container {
+    list-style: none;
+    padding-block: 2em;
+}
+
+.primary-btn {
+    font-size: 1rem;
+    font-weight: var(--font-weight-700);
+    color: var(--clr-white-100);
+    background-color: var(--clr-grey-700);
+    inline-size: 100%;
+    padding-block: 1em;
+    margin-block: 0.5em;
+    border-radius: 0.75em;
+    border: none;
+    transition: all 0.25s;
+}
+
+.primary-btn:hover {
+    background-color: var(--clr-green-500);
+    color: var(--clr-grey-700);
+}
